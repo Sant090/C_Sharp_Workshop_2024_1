@@ -374,8 +374,7 @@ public class GeometricOperation
     {
         double cosAngle = (Math.Pow(sideA, 2) + Math.Pow(sideB, 2) - Math.Pow(sideC, 2)) / (2 * sideA * sideB);
 
-        // Si el coseno del ángulo es cero, entonces es un ángulo recto
-        if (Math.Abs(cosAngle) < 0.000001)  // Usamos una pequeña tolerancia para evitar errores de precisión
+        if (Math.Abs(cosAngle) < 0.000001)
         {
             return true;
         }
